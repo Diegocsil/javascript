@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>De qual país você é?</h1>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Enter" onclick="ver()">
+    
+    <div id="display">
+
+    </div>
+
+    <script>
+        function ver() {
+            var paist = document.querySelector('input#pais')
+            var pais = paist.value
+            var display = document.querySelector('div#display')
+
+            if (pais == 'Brasil') {
+                display.innerHTML = `Morando em ${pais}, você é Brasileiro.`
+            }else{
+                display.innerHTML = `Morando em ${pais}, você é Estrangeiro.`
+            }
+        }
+    </script>
+</body>
+</html>
