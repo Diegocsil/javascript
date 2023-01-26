@@ -1,3 +1,4 @@
+//Código que fiz sozinho
 /*
 function gerar() {
     let txtnum = document.querySelector('input#txtnum')
@@ -44,7 +45,7 @@ function gerar() {
 
     if (num.value.length == 0){
         alert("[ERRO] Digite um numero.")
-    }else{
+    }else{//Utilizando FOR
         let c = 1
         tab.innerHTML=''
         for(c = 1; c <= 10; c++){
@@ -53,6 +54,7 @@ function gerar() {
             item.value = `tab${c}`
             tab.appendChild(item)
         }
+        //Utilizando WHILE
         /*
         while (c<=10){
             let item = document.createElement('option')
